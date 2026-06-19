@@ -4,7 +4,7 @@ import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 import Menu from './pages/Menu';
 import Offers from './pages/Offers';
-import ReserveTable from './pages/Reservetable';
+import ReserveaTable from './pages/Reserveatable';
 import MainLayout from "./Layouts/Mainlayout";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           {/* <Route path="/Reservetable" element={<ReserveTable />} /> */}
         </Route>
-        <Route path="/Reservetable" element={<ReserveTable />} />
+        <Route path="/Reserveatable" element={<ReserveaTable />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>

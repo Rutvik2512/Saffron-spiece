@@ -1,4 +1,4 @@
-function ReserveTable(){
+function Reserveatable(){
     return(
         <div className="h-200 w-full bg-amber-50 flex justify-center">
             <div className="h-140 w-130 bg-white mt-20 rounded-2xl pl-7 ">
@@ -28,4 +28,4 @@ function ReserveTable(){
         
     )
 }
-export default ReserveTable;
+export default Reserveatable;
