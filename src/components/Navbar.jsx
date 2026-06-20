@@ -12,7 +12,7 @@ function Navbar() {
                 <Link to="/Contact">Contact</Link>
             </div>
             <div className=" flex justify-center gap-4 py-11 px-15 ">
-                <a href="Reservetable"> <div className="bg-amber-600 text-white rounded-4xl py-1.5 px-5 font-semibold ">Reserve a Table</div></a>
+              <a href="Reserve"><button className="rounded-4xl bg-amber-500 px-3 py-2 font-semibold text-white">Reserve a Table</button></a>
                 <a href="Admin"> <div className="bg-black rounded-4xl text-white py-1.5 px-5 font-semibold">Admin</div></a>
             </div>
         </div>

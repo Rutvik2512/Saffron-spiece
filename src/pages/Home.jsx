@@ -48,7 +48,7 @@ function Home(){
                     </div>
                     {/* 3rd */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="Biryani.jpeg" className=" rounded-t-4xl h-58 w-100"></img>
+                        <img src="" className=" rounded-t-4xl h-58 w-100"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Biryani</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Hyderabadi Dum Biryani</p>
                         <p className="px-5 mt-3">Aged basmati rice layered with slow-cooked<br></br> mutton, fried onions, and aromatic whole<br></br> spices.
