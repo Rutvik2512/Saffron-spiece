@@ -20,7 +20,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           
         </Route>
-        <Route path="/Reserve" element={<Reserve />} />
+        <Route path="/reserve" element={<Reserve />} />
                 <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>

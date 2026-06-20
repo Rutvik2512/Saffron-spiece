@@ -1,7 +1,14 @@
+import shutterstockingImg from '../assets/shutterstock_2262574417.jpg'
+import shakeImg from '../assets/shake.jpg'
+import biryaniImg from '../assets/Biryani.jpeg'
+import chickenImg from '../assets/chicken.jpg'
+import gulabjamunImg from '../assets/gulab-jamun.jpg'
+import pannerImg from '../assets/panner.webp'
+import specialImg from '../assets/special-dish.webp'
 function Home(){
     return(
         <div className=" relative h-500 w-full bg-white border-amber-500">
-            <img src="shutterstock_2262574417.jpg" alt="food" className="w-full h-150 object-cover blur-[4px] border-2"></img>
+            <img src={shutterstockingImg} alt="food" className="w-full h-150 object-cover blur-[4px] border-2"></img>
             <div className="absolute inset-0 flex flex-col py-30   text-white px-4">
                 <div className="flex justify-center pt-10 uppercase font-semibold text-white text-sm">Authentic Indian Cuisine</div>
                 <div className="flex justify-center text-5xl font-serif text-center font-semibold text-shadow-white pt-3">Taste the Soul of <br></br>India, Tonight            </div>
@@ -26,7 +33,7 @@ function Home(){
                 <div className="flex justify-center py-10 gap-8">
                     {/* 1st */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="special-dish.webp" className=" rounded-t-4xl"></img>
+                        <img src={specialImg} className=" rounded-t-4xl"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Chef's Special</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Dal Makhani Royale</p>
                         <p className="px-5 mt-3">Slow-cooked black lentils simmered<br></br> overnight in tomato gravy, finished with<br></br> cream and butter.</p>
@@ -37,7 +44,7 @@ function Home(){
                     </div>
                     {/* 2nd */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="chicken.jpg" className=" rounded-t-4xl h-58"></img>
+                        <img src={chickenImg} className=" rounded-t-4xl h-58"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Tandoor</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Saffron Chicken Tikka</p>
                         <p className="px-5 mt-3">Tender chicken marinated in saffron-yogurt<br></br> spice blend, grilled in a traditional clay oven.</p>
@@ -48,7 +55,7 @@ function Home(){
                     </div>
                     {/* 3rd */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="" className=" rounded-t-4xl h-58 w-100"></img>
+                        <img src={biryaniImg} className=" rounded-t-4xl h-58 w-100"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Biryani</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Hyderabadi Dum Biryani</p>
                         <p className="px-5 mt-3">Aged basmati rice layered with slow-cooked<br></br> mutton, fried onions, and aromatic whole<br></br> spices.
@@ -63,7 +70,7 @@ function Home(){
                 <div className="flex justify-center  gap-8">
                     {/* 1st */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="panner.webp" className=" rounded-t-4xl h-57 w-100"></img>
+                        <img src={pannerImg} className=" rounded-t-4xl h-57 w-100"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Starter</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Paneer Gilafi Seekh</p>
                         <p className="px-5 mt-3">Cottage cheese seekh kebab wrapped in <br></br>colourful bell peppers, chargrilled.</p>
@@ -74,7 +81,7 @@ function Home(){
                     </div>
                     {/* 2nd */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="gulab-jamun.jpg" className=" rounded-t-4xl"></img>
+                        <img src={gulabjamunImg} className=" rounded-t-4xl"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Dessert</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Gulab Jamun Lava</p>
                         <p className="px-5 mt-3">Warm gulab jamun with a molten rose syrup<br></br> core, paired with saffron ice cream.</p>
@@ -85,7 +92,7 @@ function Home(){
                     </div>
                     {/* 3rd */}
                     <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src="shake.jpg" className=" rounded-t-4xl"></img>
+                        <img src={shakeImg} className=" rounded-t-4xl"></img>
                         <p className="px-5 mt-7 text-red-600 font-semibold">Beverages</p>
                         <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Kesar Badam Sharbat</p>
                         <p className="px-5 mt-3">Chilled almond and saffron milk blended<br></br> with rose water and pistachios.</p>
