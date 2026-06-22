@@ -21,7 +21,7 @@ function App() {
           
         </Route>
         <Route path="/reserve" element={<Reserve />} />
-                <Route path="/Admin" element={<Admin />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )
