@@ -1,6 +1,6 @@
 function Admin(){
     return(
-        <div></div>
+        <div>hhbf</div>
     )
 }
 export default Admin;
