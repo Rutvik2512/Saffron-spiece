@@ -13,7 +13,7 @@ function Navbar() {
             </div>
             <div className=" flex justify-center gap-4 py-11 px-15 ">
               <Link to="/Reserve"><button className="rounded-4xl bg-amber-500 px-3 py-2 font-semibold text-white">Reserve a Table</button></Link>
-                <a href="Admin"> <div className="bg-black rounded-4xl text-white py-1.5 px-5 font-semibold">Admin</div></a>
+               <Link to="/Aadmin">  <div className="bg-black rounded-4xl text-white py-1.5 px-5 font-semibold">Admin</div></Link>
             </div>
         </div>
     )
