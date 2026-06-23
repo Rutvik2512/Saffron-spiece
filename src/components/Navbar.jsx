@@ -8,7 +8,7 @@ function Navbar() {
             <div className="flex justify-center gap-7 text-lg   py-13 pl-4 ">
                 <Link to="/">Home</Link>
                 <Link to="/Menu">Menu</Link>
-                <Link to="/Offers">Offers</Link>
+                
                 <Link to="/Contact">Contact</Link>
             </div>
             <div className=" flex justify-center gap-4 py-11 px-15 ">

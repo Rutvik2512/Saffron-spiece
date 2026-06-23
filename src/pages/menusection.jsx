@@ -1,13 +1,14 @@
-import shutterstockingImg from '../assets/shutterstock_2262574417.jpg'
-import shakeImg from '../assets/shake.jpg'
-import biryaniImg from '../assets/Biryani.jpeg'
-import chickenImg from '../assets/chicken.jpg'
-import gulabjamunImg from '../assets/gulab-jamun.jpg'
-import pannerImg from '../assets/panner.webp'
-import specialImg from '../assets/special-dish.webp'
-import butterchickenImg from '../assets/butterchicken.jpg'
-import rasmalaiImg from '../assets/rasmalai.webp'
-import { useState } from 'react'
+import { useState } from "react";
+
+// Keep your existing image imports — adjust paths if needed
+import specialImg from "./assets/dal-makhani.jpg";
+import chickenImg from "./assets/saffron-chicken-tikka.jpg";
+import biryaniImg from "./assets/hyderabadi-biryani.jpg";
+import pannerImg from "./assets/paneer-gilafi.jpg";
+import butterChickenImg from "./assets/butter-chicken.jpg";
+import gulabjamunImg from "./assets/gulab-jamun.jpg";
+import rasmalaiImg from "./assets/rasmalai.jpg";
+import shakeImg from "./assets/kesar-badam.jpg";
 
 const FILTERS = ["All", "Starters", "Mains", "Desserts", "Beverages"];
 
@@ -52,7 +53,7 @@ const MENU_ITEMS = [
         id: 5,
         category: "Mains",
         tag: "Mains",
-        img: butterchickenImg,
+        img: butterChickenImg,
         name: "Butter Chicken Masala",
         desc: "Classic chicken curry simmered in a velvety tomato-butter gravy with warm spices.",
         price: 420,
@@ -86,25 +87,16 @@ const MENU_ITEMS = [
     },
 ];
 
-function Menu(){
+export default function MenuSection() {
     const [activeFilter, setActiveFilter] = useState("All");
-    
-        const filteredItems =
-            activeFilter === "All"
-                ? MENU_ITEMS
-                : MENU_ITEMS.filter((item) => item.category === activeFilter);
-    return(
-        <div>
-            <div className="bg-amber-50 h-450 w-full py-10">
-                        <div className="flex justify-between ">
-                            <div className="px-20 mt-10 ">
-                                <div className=" text-amber-600 text-lg">Our Menu</div>
-                                <div className="text-4xl font-serif font-semibold mt-2">Crafted with Spice & Care</div>
-                            </div>
-                            
-                        </div>
-                    
-                    <section className="py-10">
+
+    const filteredItems =
+        activeFilter === "All"
+            ? MENU_ITEMS
+            : MENU_ITEMS.filter((item) => item.category === activeFilter);
+
+    return (
+        <section className="py-10">
             {/* Filter pills */}
             <div className="flex justify-center gap-4 mb-10 flex-wrap">
                 {FILTERS.map((filter) => (
@@ -157,8 +149,5 @@ function Menu(){
                 </p>
             )}
         </section>
-                    </div>
-                    </div>
     );
 }
-export default Menu;
