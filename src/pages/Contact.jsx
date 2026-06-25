@@ -1,6 +1,6 @@
 function Contact(){
     return(
-        <div className="h-150 ml-20 mt-10 flex justify-between">
+        <div className="h-150  pt-10 pl-10 flex justify-between bg-amber-50">
             <div>
             <p className="font-semibold">Find Us</p>
             <p className="text-3xl font-semibold font-serif mt-2 text-green-950">Come Dine with Us</p>
