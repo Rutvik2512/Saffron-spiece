@@ -1,28 +1,73 @@
-function footer(){
-    return(
-        <div className=" w-full h-50 bg-amber-950 flex justify-between">
-            <div className=" content-center-safe">
-                <div className="text-white pt-10 pl-10 font-serif font-semibold ">🍽️ Saffron & Spice</div>
-                <p className="pt-4 pl-10 text-amber-100">Authentic Indian dining since 1999. Made <br></br>with tradition, spice, and heart — right here<br></br> in Ahmedabad.</p>
+import { Link } from "react-router-dom";
+
+function Footer() {
+  return (
+    <footer className="bg-amber-950 text-white py-10">
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+          {/* Restaurant Info */}
+          <div>
+            <h2 className="text-2xl font-serif font-bold mb-4">
+              🍽️ Saffron & Spice
+            </h2>
+
+            <p className="text-amber-100 leading-7">
+              Authentic Indian dining since 1999. Made with
+              tradition, spice, and heart — right here in
+              Ahmedabad.
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div>
+            <h2 className="text-xl font-semibold mb-4">
+              Navigate
+            </h2>
+
+            <div className="flex flex-col gap-2 text-amber-100">
+              <Link to="/" className="hover:text-white">
+                Home
+              </Link>
+
+              <Link to="/Menu" className="hover:text-white">
+                Menu
+              </Link>
+
+              <Link to="/Offers" className="hover:text-white">
+                Offers
+              </Link>
+
+              <Link to="/Contact" className="hover:text-white">
+                Contact
+              </Link>
             </div>
-            <div className="px-80 pt-9 content-center-safe ">
-                <div className="text-white">Navigate</div>
-             <div className="text-amber-100 pt-3 gap-1"> 
-                 <a href=" /"><div>Home</div></a>
-                <a href="Menu"><div>Menu</div></a>
-                <a href="Offers"><div>Offers</div></a>
-                <a href="Contact"><div>Contact</div></a>
-                </div> 
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h2 className="text-xl font-semibold mb-4">
+              Contact
+            </h2>
+
+            <div className="text-amber-100 leading-7">
+              <p>+91 98765 43210</p>
+              <p>hello@saffronandspice.in</p>
+              <p>Navrangpura, Ahmedabad</p>
             </div>
-            <div className="content-center-safe  pr-15">
-                <div className="text-white">CONTACT</div>
-                <div className="text-amber-100 mt-3">
-                    +91 98765 43210<br></br>
-hello@saffronandspice.in<br></br>
-Navrangpura, Ahmedabad
-                </div>
-            </div>
+          </div>
+
         </div>
-    )
+
+        {/* Bottom Footer */}
+        <div className="border-t border-amber-800 mt-8 pt-6 text-center text-amber-200 text-sm">
+          © 2026 Saffron & Spice. All Rights Reserved.
+        </div>
+
+      </div>
+    </footer>
+  );
 }
-export default footer;
+
+export default Footer;

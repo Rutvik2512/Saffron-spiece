@@ -1,110 +1,183 @@
-import shutterstockingImg from '../assets/shutterstock_2262574417.jpg'
-import shakeImg from '../assets/shake.jpg'
-import biryaniImg from '../assets/Biryani.jpeg'
-import chickenImg from '../assets/chicken.jpg'
-import gulabjamunImg from '../assets/gulab-jamun.jpg'
-import pannerImg from '../assets/panner.webp'
-import specialImg from '../assets/special-dish.webp'
-function Home(){
-    return(
-        <div className=" relative h-500 w-full bg-white border-amber-500">
-            <img src={shutterstockingImg} alt="food" className="w-full h-150 object-cover blur-[4px] border-2"></img>
-            <div className="absolute inset-0 flex flex-col py-30   text-white px-4">
-                <div className="flex justify-center pt-10 uppercase font-semibold text-white text-sm">Authentic Indian Cuisine</div>
-                <div className="flex justify-center text-5xl font-serif text-center font-semibold text-shadow-white pt-3">Taste the Soul of <br></br>India, Tonight            </div>
-                <div className=" flex justify-center gap-7 py-15">
-                    <a href="Menu"><button className="bg-amber-500 rounded-4xl text-lg py-1.5 px-3 font-semibold text-white"> Explore a menu</button></a>
-                    <a href="Reservetable"><button className="border-1 bg-amber-50 rounded-4xl text-lg py-1.5 px-3 text-black font-semibold">Book a table</button></a>
-                </div>
-            </div>
-            <div className="bg-amber-100 h-350 w-full py-10">
-                <div className="flex justify-between ">
-                    <div className="px-20 mt-10 ">
-                        <div className=" text-amber-600 text-lg">Our Menu</div>
-                        <div className="text-4xl font-serif font-semibold mt-2">Crafted with Spice & Care</div>
-                    </div>
-                    <div className="mt-15">
-                        <button className="mr-20 rounded-3xl bg-amber-500 px-2.5 py-1.5 font-semibold text-white text-lg ">View full menu</button>
-                    </div>
-                </div>
-            
-            <section>
-                {/* row-1 */}
-                <div className="flex justify-center py-10 gap-8">
-                    {/* 1st */}
-                    <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src={specialImg} className=" rounded-t-4xl"></img>
-                        <p className="px-5 mt-7 text-red-600 font-semibold">Chef's Special</p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Dal Makhani Royale</p>
-                        <p className="px-5 mt-3">Slow-cooked black lentils simmered<br></br> overnight in tomato gravy, finished with<br></br> cream and butter.</p>
-                        <div className="flex justify-between mt-5">
-                            <p className="px-5">₹320</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold">Order now</button>
-                        </div>
-                    </div>
-                    {/* 2nd */}
-                    <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src={chickenImg} className=" rounded-t-4xl h-58"></img>
-                        <p className="px-5 mt-7 text-red-600 font-semibold">Tandoor</p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Saffron Chicken Tikka</p>
-                        <p className="px-5 mt-3">Tender chicken marinated in saffron-yogurt<br></br> spice blend, grilled in a traditional clay oven.</p>
-                        <div className="flex justify-between mt-5">
-                            <p className="px-5">₹480</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold">Order now</button>
-                        </div>
-                    </div>
-                    {/* 3rd */}
-                    <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src={biryaniImg} className=" rounded-t-4xl h-58 w-100"></img>
-                        <p className="px-5 mt-7 text-red-600 font-semibold">Biryani</p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Hyderabadi Dum Biryani</p>
-                        <p className="px-5 mt-3">Aged basmati rice layered with slow-cooked<br></br> mutton, fried onions, and aromatic whole<br></br> spices.
-</p>
-                        <div className="flex justify-between mt-5">
-                            <p className="px-5">₹550</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold">Order now</button>
-                        </div>
-                    </div>
-                </div>
-                {/* row-2 */}
-                <div className="flex justify-center  gap-8">
-                    {/* 1st */}
-                    <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src={pannerImg} className=" rounded-t-4xl h-57 w-100"></img>
-                        <p className="px-5 mt-7 text-red-600 font-semibold">Starter</p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Paneer Gilafi Seekh</p>
-                        <p className="px-5 mt-3">Cottage cheese seekh kebab wrapped in <br></br>colourful bell peppers, chargrilled.</p>
-                        <div className="flex justify-between mt-5">
-                            <p className="px-5">₹360</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold">Order now</button>
-                        </div>
-                    </div>
-                    {/* 2nd */}
-                    <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src={gulabjamunImg} className=" rounded-t-4xl"></img>
-                        <p className="px-5 mt-7 text-red-600 font-semibold">Dessert</p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Gulab Jamun Lava</p>
-                        <p className="px-5 mt-3">Warm gulab jamun with a molten rose syrup<br></br> core, paired with saffron ice cream.</p>
-                        <div className="flex justify-between mt-5">
-                            <p className="px-5">₹200</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold">Order now</button>
-                        </div>
-                    </div>
-                    {/* 3rd */}
-                    <div className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg">
-                        <img src={shakeImg} className=" rounded-t-4xl"></img>
-                        <p className="px-5 mt-7 text-red-600 font-semibold">Beverages</p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">Kesar Badam Sharbat</p>
-                        <p className="px-5 mt-3">Chilled almond and saffron milk blended<br></br> with rose water and pistachios.</p>
-                        <div className="flex justify-between mt-5">
-                            <p className="px-5">₹150</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold">Order now</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            </div>
+import shutterstockingImg from "../assets/shutterstock_2262574417.jpg";
+import shakeImg from "../assets/shake.jpg";
+import biryaniImg from "../assets/Biryani.jpeg";
+import chickenImg from "../assets/chicken.jpg";
+import gulabjamunImg from "../assets/gulab-jamun.jpg";
+import pannerImg from "../assets/panner.webp";
+import specialImg from "../assets/special-dish.webp";
+import {Link} from "react-router-dom";
+
+function Home() {
+  const menuItems = [
+    {
+      image: specialImg,
+      category: "Chef's Special",
+      title: "Dal Makhani Royale",
+      desc: "Slow-cooked black lentils simmered overnight in tomato gravy, finished with cream and butter.",
+      price: "₹320",
+    },
+    {
+      image: chickenImg,
+      category: "Tandoor",
+      title: "Saffron Chicken Tikka",
+      desc: "Tender chicken marinated in saffron yogurt spice blend, grilled in a traditional clay oven.",
+      price: "₹480",
+    },
+    {
+      image: biryaniImg,
+      category: "Biryani",
+      title: "Hyderabadi Dum Biryani",
+      desc: "Aged basmati rice layered with slow-cooked mutton, fried onions and aromatic spices.",
+      price: "₹550",
+    },
+    {
+      image: pannerImg,
+      category: "Starter",
+      title: "Paneer Gilafi Seekh",
+      desc: "Cottage cheese seekh kebab wrapped in colourful bell peppers and chargrilled.",
+      price: "₹360",
+    },
+    {
+      image: gulabjamunImg,
+      category: "Dessert",
+      title: "Gulab Jamun Lava",
+      desc: "Warm gulab jamun with molten rose syrup core paired with saffron ice cream.",
+      price: "₹200",
+    },
+    {
+      image: shakeImg,
+      category: "Beverages",
+      title: "Kesar Badam Sharbat",
+      desc: "Chilled almond and saffron milk blended with rose water and pistachios.",
+      price: "₹150",
+    },
+  ];
+
+  return (
+    <div className="w-full bg-white">
+
+      {/* Hero Section */}
+
+      <section className="relative">
+        <img
+          src={shutterstockingImg}
+          alt="food"
+          className="w-full h-[500px] md:h-[650px] object-cover  blur-xs"
+        />
+
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-5">
+
+          <p className="uppercase tracking-widest text-amber-300 text-sm md:text-lg">
+            Authentic Indian Cuisine
+          </p>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-white mt-4 leading-tight">
+            Taste the Soul of
+            <br />
+            India, Tonight
+          </h1>
+
+          <div className="flex flex-col sm:flex-row gap-5 mt-10">
+
+            <Link to="/menu">
+              <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-semibold duration-300">
+                Explore Menu
+              </button>
+            </Link>
+
+            <Link to="/Reserve">
+              <button className="bg-white hover:bg-gray-200 text-black px-8 py-3 rounded-full font-semibold duration-300">
+                Book a Table
+              </button>
+            </Link>
+
+          </div>
         </div>
-    )
+      </section>
+
+      {/* Menu Section */}
+
+      <section className="bg-amber-50 py-16">
+
+        <div className="max-w-7xl mx-auto px-5">
+
+          <div className="flex flex-col md:flex-row justify-between items-center gap-5">
+
+            <div>
+
+              <p className="text-amber-600 font-semibold">
+                Our Menu
+              </p>
+
+              <h2 className="text-3xl md:text-5xl font-serif font-bold mt-2">
+                Crafted with Spice & Care
+              </h2>
+
+            </div>
+
+            <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold duration-300">
+              View Full Menu
+            </button>
+
+          </div>
+
+          {/* Cards */}
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-14">
+
+            {menuItems.map((item, index) => (
+
+              <div
+                key={index}
+                className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 duration-300"
+              >
+
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-60 object-cover"
+                />
+
+                <div className="p-6">
+
+                  <p className="text-red-500 font-semibold">
+                    {item.category}
+                  </p>
+
+                  <h3 className="text-2xl font-serif font-bold mt-2">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-600 mt-4 leading-7">
+                    {item.desc}
+                  </p>
+
+                  <div className="flex justify-between items-center mt-6">
+
+                    <span className="text-xl font-bold">
+                      {item.price}
+                    </span>
+
+                    <button className="bg-amber-500 hover:bg-amber-600 text-white px-5 py-2 rounded-full font-semibold duration-300">
+                      Order Now
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  );
 }
+
 export default Home;

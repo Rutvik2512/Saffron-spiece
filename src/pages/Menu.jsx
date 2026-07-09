@@ -93,72 +93,107 @@ function Menu(){
             activeFilter === "All"
                 ? MENU_ITEMS
                 : MENU_ITEMS.filter((item) => item.category === activeFilter);
-    return(
-        <div>
-            <div className="bg-amber-50 h-450 w-full py-10">
-                        <div className="flex justify-between ">
-                            <div className="px-20 mt-10 ">
-                                <div className=" text-amber-600 text-lg">Our Menu</div>
-                                <div className="text-4xl font-serif font-semibold mt-2">Crafted with Spice & Care</div>
-                            </div>
-                            
-                        </div>
-                    
-                    <section className="py-10">
-            {/* Filter pills */}
-            <div className="flex justify-center gap-4 mb-10 flex-wrap">
-                {FILTERS.map((filter) => (
-                    <button
-                        key={filter}
-                        onClick={() => setActiveFilter(filter)}
-                        className={`px-6 py-2 rounded-full font-semibold transition-colors duration-200 ${
-                            activeFilter === filter
-                                ? "bg-red-600 text-white shadow-md"
-                                : "bg-white text-gray-700 shadow-sm hover:bg-amber-50"
-                        }`}
-                    >
-                        {filter}
-                    </button>
-                ))}
+    return (
+  <div className="bg-amber-50 min-h-screen py-12">
+
+    <div className="max-w-7xl mx-auto px-5">
+
+      {/* Heading */}
+      <div className="text-center mb-10">
+        <p className="text-amber-600 text-lg font-semibold">
+          Our Menu
+        </p>
+
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mt-3">
+          Crafted with Spice & Care
+        </h2>
+      </div>
+
+      {/* Filter Buttons */}
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-12">
+
+        {FILTERS.map((filter) => (
+
+          <button
+            key={filter}
+            onClick={() => setActiveFilter(filter)}
+            className={`px-5 sm:px-6 py-2 rounded-full font-semibold duration-300 ${
+              activeFilter === filter
+                ? "bg-red-600 text-white shadow-lg"
+                : "bg-white text-gray-700 hover:bg-amber-500 hover:text-white shadow"
+            }`}
+          >
+            {filter}
+          </button>
+
+        ))}
+
+      </div>
+
+      {/* Menu Cards */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        {filteredItems.map((item) => (
+
+          <div
+            key={item.id}
+            className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+          >
+
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-full h-60 object-cover"
+            />
+
+            <div className="p-6">
+
+              <p className="text-red-600 font-semibold uppercase text-sm tracking-wide">
+                {item.tag}
+              </p>
+
+              <h3 className="text-2xl font-serif font-bold mt-2">
+                {item.name}
+              </h3>
+
+              <p className="text-gray-600 mt-4 leading-7">
+                {item.desc}
+              </p>
+
+              <div className="flex justify-between items-center mt-6">
+
+                <span className="text-xl font-bold text-gray-800">
+                  ₹{item.price}
+                </span>
+
+                <button className="bg-amber-500 hover:bg-amber-600 text-white px-5 py-2 rounded-full font-semibold transition">
+                  Order Now
+                </button>
+
+              </div>
+
             </div>
 
-            {/* Menu grid */}
-            <div className="flex flex-wrap justify-center gap-8 px-4">
-                {filteredItems.map((item) => (
-                    <div
-                        key={item.id}
-                        className="h-120 rounded-4xl bg-white w-100 hover:bg-amber-100 shadow-lg"
-                    >
-                        <img
-                            src={item.img}
-                            alt={item.name}
-                            className="rounded-t-4xl h-58 w-100 object-cover"
-                        />
-                        <p className="px-5 mt-7 text-red-600 font-semibold uppercase text-sm">
-                            {item.tag}
-                        </p>
-                        <p className="text-black font-serif text-xl px-5 mt-4 font-bold">
-                            {item.name}
-                        </p>
-                        <p className="px-5 mt-3 text-gray-600">{item.desc}</p>
-                        <div className="flex justify-between items-center mt-5">
-                            <p className="px-5 font-semibold">₹{item.price}</p>
-                            <button className="rounded-3xl bg-amber-500 py-1 px-3 mr-5 text-white font-semibold hover:bg-amber-600">
-                                Order now
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+          </div>
 
-            {filteredItems.length === 0 && (
-                <p className="text-center text-gray-500 mt-10">
-                    No items found in this category.
-                </p>
-            )}
-        </section>
-                    </div>
-                    </div>
-    );
+        ))}
+
+      </div>
+
+      {filteredItems.length === 0 && (
+        <div className="text-center mt-12">
+
+          <p className="text-gray-500 text-lg">
+            No items found in this category.
+          </p>
+
+        </div>
+      )}
+
+    </div>
+
+  </div>
+);
 }
 export default Menu;

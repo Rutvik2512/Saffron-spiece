@@ -14,7 +14,7 @@ function Reserve(){
                         <input type="time" placeholder="" className=" rounded-lg bg-amber-50 px-14 py-2"></input>
                     </form>
                     <input type="number" placeholder="Number of Guest" className="rounded-lg bg-amber-50 px-34 py-2 mt-5"></input>
-                    <input type="text" placeholder="Number of Guest " className="rounded-lg bg-amber-50 px-34 py-15 mt-5 "></input>
+                    <input type="text" placeholder="Special request " className="rounded-lg bg-amber-50 px-34 py-15 mt-5 "></input>
 
                 </div>
                 <div>
