@@ -114,10 +114,11 @@ function Home() {
               </h2>
 
             </div>
-
-            <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold duration-300">
-              View Full Menu
-            </button>
+    <Link to="/menu">
+              <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold duration-300">
+                View Full Menu
+              </button>
+            </Link>
 
           </div>
 
